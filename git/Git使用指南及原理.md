@@ -55,6 +55,21 @@ git reset --hard origin/master
 git reset 版本号
 ```
 
+### 其他操作
+- git建立本地仓库
+```
+git init
+```
+- git将本地仓库推送到远程仓库
+```
+git remote add origin 远程库地址
+```
+- git忽略掉某些文件
+```
+在git的项目目录下创建.gitignore文件，并在其中添加要忽略的文件的pattern，比如要忽略掉pyc文件，则可以在.gitignore文件中添加一行
+*.pyc
+这样git就会忽略掉对pyc后缀文件的检查
+```
 ### 问题
 - git中的origin是什么意思?
 origin是git默认创建的指向远程代码仓库的标签，因此origin就是默认情况下远端库的名字。
